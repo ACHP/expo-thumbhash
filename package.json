@@ -1,0 +1,42 @@
+{
+  "name": "expo-thumbhash",
+  "version": "0.1.0",
+  "description": "A module to use thumbhash instead of blurash",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "build": "expo-module build",
+    "clean": "expo-module clean",
+    "lint": "expo-module lint",
+    "test": "expo-module test",
+    "prepare": "expo-module prepare",
+    "prepublishOnly": "expo-module prepublishOnly",
+    "expo-module": "expo-module",
+    "open:ios": "open -a \"Xcode\" example/ios",
+    "open:android": "open -a \"Android Studio\" example/android"
+  },
+  "keywords": [
+    "react-native",
+    "expo",
+    "expo-thumbhash",
+    "ExpoThumbhash"
+  ],
+  "repository": "https://github.com/ACHP/expo-thumbhash",
+  "bugs": {
+    "url": "https://github.com/ACHP/expo-thumbhash/issues"
+  },
+  "author": "Alexis CHAPPRON <bullrot-10@hotmail.fr> (https://github.com/ACHP)",
+  "license": "MIT",
+  "homepage": "https://github.com/ACHP/expo-thumbhash#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/react": "^18.0.25",
+    "expo-module-scripts": "^3.0.11",
+    "expo-modules-core": "^1.5.7"
+  },
+  "peerDependencies": {
+    "expo": "*",
+    "react": "*",
+    "react-native": "*"
+  }
+}
