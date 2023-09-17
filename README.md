@@ -1,5 +1,12 @@
 # expo-thumbhash
 
+
+
+https://github.com/ACHP/expo-thumbhash/assets/9294168/d08a7845-9c43-4c16-869f-c9e78b45146e
+
+
+
+
 A module to display [ThumbHash](https://evanw.github.io/thumbhash/) using [Expo module](https://docs.expo.dev/modules/overview/).
 
 *(If you want to use this library in a React-Native app,
