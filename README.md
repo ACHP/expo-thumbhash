@@ -2,9 +2,9 @@
 
 A module to display [ThumbHash](https://evanw.github.io/thumbhash/) using [Expo module](https://docs.expo.dev/modules/overview/).
 
-(*If you want to use this library in a React-Native app,
+*(If you want to use this library in a React-Native app,
 you'll first need to [install expo modules](https://docs.expo.dev/bare/installing-expo-modules/)).
-That's why this project name is expo-thumbhash and not react-native-thumbhash)
+That's why this project name is expo-thumbhash and not react-native-thumbhash)*
 
 > [!CAUTION]
 > Please be mindful that this project is an endeavor to understand the workings of expo-module.
