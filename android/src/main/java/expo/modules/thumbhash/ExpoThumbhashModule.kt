@@ -23,7 +23,7 @@ class ExpoThumbhashModule : Module() {
 
     // Defines a JavaScript synchronous function that runs the native code on the JavaScript thread.
     Function("hello") {
-      "Hello world! 👋"
+      "Hello, is it me you're looking for ?"
     }
 
     // Defines a JavaScript function that always returns a Promise and whose native code
@@ -37,10 +37,15 @@ class ExpoThumbhashModule : Module() {
 
     // Enables the module to be used as a native view. Definition components that are accepted as part of
     // the view definition: Prop, Events.
-    View(ExpoThumbhashView::class) {
+    View(ExpoThumbHashView::class) {
+      Events("onLoaded")
       // Defines a setter for the `name` prop.
-      Prop("name") { view: ExpoThumbhashView, prop: String ->
-        println(prop)
+      Prop("hash") { view: ExpoThumbHashView, prop: String? ->
+        if(prop != null){
+          view.setThumbHash(prop);
+        }else{
+          view.clear()
+        }
       }
     }
   }
