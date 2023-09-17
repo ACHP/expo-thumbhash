@@ -40,5 +40,15 @@ public class ExpoThumbhashModule: Module {
         print(prop)
       }
     }
+
+    View(ExpoThumbhashView.self) {
+      Prop("hash") { (view, hash: String?) in
+        if let nonNilHash = hash {
+            view.renderHash(hash: nonNilHash)
+        }else{
+            view.clear()
+        }
+      }
+    }
   }
 }

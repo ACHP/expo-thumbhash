@@ -5,10 +5,10 @@ export type ChangeEventPayload = {
 };
 
 export type OnLoadEvent = {
-  url: string;
+  hash: string;
 };
 
 export type ExpoThumbhashViewProps = {
-  url?: string;
-  onLoad?: (event: { nativeEvent: OnLoadEvent }) => void;
+  hash?: string;
+  onLoaded?: (event: { nativeEvent: OnLoadEvent }) => void;
 } & ViewProps;

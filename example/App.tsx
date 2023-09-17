@@ -1,7 +1,7 @@
-import { Button, StyleSheet, View } from "react-native";
+import React, { useCallback, useState } from "react";
+import { Button, StyleSheet, View, Text } from "react-native";
 
 import * as ExpoThumbhash from "expo-thumbhash";
-import { useCallback, useState } from "react";
 
 
 const knownThumbHash = [
@@ -40,8 +40,8 @@ export default function App() {
         onLoaded={() => console.log("onLoaded")}
         hash={knownThumbHash[currentThumbHashIndex]}
         style={{ width: "100%", height: 300 }} />
+      <Text>{knownThumbHash[currentThumbHashIndex]}</Text>
       <View style={styles.row}>
-
         <Button title={"Previous"} onPress={setPrevThumbHash} />
         <Button title={"Next"} onPress={setNextThumbHash} />
       </View>
