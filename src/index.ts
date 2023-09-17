@@ -5,6 +5,7 @@ import { NativeModulesProxy, EventEmitter, Subscription } from 'expo-modules-cor
 import ExpoThumbhashModule from './ExpoThumbhashModule';
 import ExpoThumbhashView from './ExpoThumbhashView';
 import { ChangeEventPayload, ExpoThumbhashViewProps } from './ExpoThumbhash.types';
+import ExpoThumbHashNative from "./ExpoThumbhashModule";
 
 // Get the native constant value.
 export const PI = ExpoThumbhashModule.PI;
@@ -13,8 +14,8 @@ export function hello(): string {
   return ExpoThumbhashModule.hello();
 }
 
-export async function setValueAsync(value: string) {
-  return await ExpoThumbhashModule.setValueAsync(value);
+export async function encode(url: string): Promise<string> {
+  return await ExpoThumbHashNative.encode(url);
 }
 
 const emitter = new EventEmitter(ExpoThumbhashModule ?? NativeModulesProxy.ExpoThumbhash);
